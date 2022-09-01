@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b845a9f1-6b0e-4d01-9142-b7c11758453c">
+  <producedTypes>
+    <selectionType typeId="1d5adbc6-0b6b-4c5a-8b05-f823e3f907ec" valueTypeId="8b097a73-f8a3-4685-979b-4f18f9528e70"/>
+    <listType typeId="33d6d5ed-42b0-462b-a0f9-1b63767f82f3" valueTypeId="22af0932-d938-43e0-95e8-f29b21e2a518"/>
+    <managerType typeId="f041f4bc-4b57-4279-8b84-24147b3c495a" valueTypeId="a34e9d1a-25f5-4410-91ed-da4c64078f88"/>
+    <recordSetType typeId="50d18ed8-291d-4a72-b863-b14e5afdd3ae" valueTypeId="93caa5ef-6825-4a57-8509-c36cd928dd93"/>
+    <recordKeyType typeId="ec2bf3da-468a-4002-9ad0-bfcd8138b004" valueTypeId="139a6d22-eb3f-4346-a4a3-9f0e61b24fff"/>
+    <recordType typeId="a8197374-5f60-4500-9387-4e7a5eb2ff01" valueTypeId="ceef20e5-1d00-4757-8dfd-e98c041a0160"/>
+    <recordManagerType typeId="e2190201-f7e6-4fcb-9899-a240c5b7dff2" valueTypeId="1d39d06f-21e3-450a-b5e0-917c7decb77e"/>
+  </producedTypes>
+  <name>ЖурналСостоянийЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал состояний задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Состояние задачи</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Журнал состояний задач</value>
+  </listPresentation>
+  <resources uuid="221b6081-1194-432f-8329-4cb38af853b4">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="28364fdb-472f-48c6-aedf-1daa4133ee6e">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3de3c3f0-62a4-4c78-bd5f-564bc1c5cfc6">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Задачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1cad432a-32a8-45fc-a410-2dadea314765">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияЗадач</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

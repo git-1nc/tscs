@@ -39,4 +39,9 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <documents>Document.Задачи</documents>
+  <enums>Enum.СостоянияЗадач</enums>
+  <informationRegisters>InformationRegister.ЖурналСостоянийЗадач</informationRegisters>
 </mdclass:Configuration>
